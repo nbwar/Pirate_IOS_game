@@ -40,6 +40,8 @@
 
 // Actions
 
+#pragma mark - IBAction
+
 - (IBAction)actionButtonPressed:(UIButton *)sender {
     NWTile *tile = [[self.tiles objectAtIndex:self.currentPoint.x] objectAtIndex:self.currentPoint.y];
     if (tile.healhEffect == -15) {
@@ -91,6 +93,7 @@
 }
 
 // Helper methods
+#pragma mark - helper methods
 
 -(void)updateTile
 {
