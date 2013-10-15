@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "NWCharacter.h"
+#import "NWBoss.h"
 
 @interface NWViewController : UIViewController
 
@@ -15,6 +16,7 @@
 @property (nonatomic) CGPoint currentPoint;
 @property (strong, nonatomic) NSArray *tiles;
 @property (strong, nonatomic) NWCharacter *character;
+@property (strong, nonatomic) NWBoss *boss;
 
 
 //IBOutlets

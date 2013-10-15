@@ -38,6 +38,7 @@
 		017DBDD0180DE1FC004F3313 /* NWWeapon.m in Sources */ = {isa = PBXBuildFile; fileRef = 017DBDCF180DE1FC004F3313 /* NWWeapon.m */; };
 		017DBDD3180DE228004F3313 /* NWArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = 017DBDD2180DE228004F3313 /* NWArmor.m */; };
 		017DBDD6180DE264004F3313 /* NWCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 017DBDD5180DE264004F3313 /* NWCharacter.m */; };
+		017DBDD9180DF812004F3313 /* NWBoss.m in Sources */ = {isa = PBXBuildFile; fileRef = 017DBDD8180DF812004F3313 /* NWBoss.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		017DBDD2180DE228004F3313 /* NWArmor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWArmor.m; sourceTree = "<group>"; };
 		017DBDD4180DE264004F3313 /* NWCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWCharacter.h; sourceTree = "<group>"; };
 		017DBDD5180DE264004F3313 /* NWCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWCharacter.m; sourceTree = "<group>"; };
+		017DBDD7180DF812004F3313 /* NWBoss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWBoss.h; sourceTree = "<group>"; };
+		017DBDD8180DF812004F3313 /* NWBoss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWBoss.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +227,8 @@
 				017DBDD2180DE228004F3313 /* NWArmor.m */,
 				017DBDD4180DE264004F3313 /* NWCharacter.h */,
 				017DBDD5180DE264004F3313 /* NWCharacter.m */,
+				017DBDD7180DF812004F3313 /* NWBoss.h */,
+				017DBDD8180DF812004F3313 /* NWBoss.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -355,6 +360,7 @@
 				017DBDD3180DE228004F3313 /* NWArmor.m in Sources */,
 				017DBDD0180DE1FC004F3313 /* NWWeapon.m in Sources */,
 				017DBDCC180DD51C004F3313 /* NWFactory.m in Sources */,
+				017DBDD9180DF812004F3313 /* NWBoss.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

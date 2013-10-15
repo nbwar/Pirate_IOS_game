@@ -21,8 +21,10 @@
     [super viewDidLoad];
     NWFactory *factory = [[NWFactory alloc] init];
     self.tiles = [factory tiles];
-    self.currentPoint = CGPointMake(0, 0);
     self.character = [factory character];
+    self.boss = [factory boss];
+    
+    self.currentPoint = CGPointMake(0, 0);
     [self updateCharacterStatsForArmor:nil withWeapons:nil withHealthEffect:0];
     [self updateTile];
     [self updateButtons];
@@ -40,6 +42,10 @@
 
 - (IBAction)actionButtonPressed:(UIButton *)sender {
     NWTile *tile = [[self.tiles objectAtIndex:self.currentPoint.x] objectAtIndex:self.currentPoint.y];
+    if (tile.healhEffect == -15) {
+        self.boss.health -= self.character.damage;
+    }
+    
     [self updateCharacterStatsForArmor:tile.armor withWeapons:tile.weapon withHealthEffect:tile.healhEffect];
     [self updateTile];
 }

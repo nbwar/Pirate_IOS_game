@@ -1,5 +1,5 @@
 //
-//  NWFactory.h
+//  NWBoss.h
 //  Pirate Game
 //
 //  Created by Nicholas Wargnier on 10/15/13.
@@ -7,15 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NWCharacter.h"
-#import "NWBoss.h"
 
-@interface NWFactory : NSObject
+@interface NWBoss : NSObject
 
--(NSArray *)tiles;
-
--(NWCharacter *)character;
-
--(NWBoss *)boss;
+@property (nonatomic) int health;
 
 @end

@@ -154,4 +154,11 @@
     
     return character;
 }
+
+-(NWBoss *)boss
+{
+    NWBoss *boss = [[NWBoss alloc] init];
+    boss.health = 65;
+    return boss;
+}
 @end
