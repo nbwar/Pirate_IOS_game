@@ -47,6 +47,16 @@
     }
     
     [self updateCharacterStatsForArmor:tile.armor withWeapons:tile.weapon withHealthEffect:tile.healhEffect];
+    
+    if (self.character.health <= 0) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Death Message" message:@"You Have died please reset" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        [alertView show];
+    } else if (self.boss.health <= 0) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Victory" message:@"You have defeated the boss" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        [alertView show];
+    }
+    
+    
     [self updateTile];
 }
 
@@ -72,6 +82,12 @@
     self.currentPoint = CGPointMake(self.currentPoint.x + 1, self.currentPoint.y);
     [self updateButtons];
     [self updateTile];
+}
+
+- (IBAction)resetButtonPressed:(UIButton *)sender {
+    self.character = nil;
+    self.boss = nil;
+    [self viewDidLoad];
 }
 
 // Helper methods
