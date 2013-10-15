@@ -1,5 +1,5 @@
 //
-//  NWFactory.h
+//  NWArmor.h
 //  Pirate Game
 //
 //  Created by Nicholas Wargnier on 10/15/13.
@@ -7,12 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NWCharacter.h"
 
-@interface NWFactory : NSObject
+@interface NWArmor : NSObject
 
--(NSArray *)tiles;
-
--(NWCharacter *)character;
+@property (strong, nonatomic) NSString *name;
+@property (nonatomic) int health;
 
 @end

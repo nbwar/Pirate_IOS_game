@@ -1,18 +1,15 @@
 //
-//  NWFactory.h
+//  NWCharacter.m
 //  Pirate Game
 //
 //  Created by Nicholas Wargnier on 10/15/13.
 //  Copyright (c) 2013 Nicholas Wargnier. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "NWCharacter.h"
 
-@interface NWFactory : NSObject
+@implementation NWCharacter
 
--(NSArray *)tiles;
 
--(NWCharacter *)character;
 
 @end

@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NWCharacter.h"
 
 @interface NWViewController : UIViewController
+
+//Instance Variables
+@property (nonatomic) CGPoint currentPoint;
+@property (strong, nonatomic) NSArray *tiles;
+@property (strong, nonatomic) NWCharacter *character;
+
 
 //IBOutlets
 
